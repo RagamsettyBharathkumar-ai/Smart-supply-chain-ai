@@ -148,7 +148,7 @@ python app.py
 
 ## 🎥 Demo
 
-(Add your video link here)
+https://drive.google.com/file/d/189Yy8XEdDE7gANx06FwMNlz2Z4eet0_A/view?usp=sharing
 
 ---
 
