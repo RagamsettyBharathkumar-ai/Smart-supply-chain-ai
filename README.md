@@ -132,7 +132,7 @@ python app.py
 
 ## 🔑 Login Credentials (Demo)
 
-* Username: anything
+* Username: Bharath
 * Password: `shipment123`
 
 ---
@@ -154,5 +154,5 @@ python app.py
 
 ## 👨‍💻 Author
 
-Your Name
+R.bharath kumar
 # Smart-supply-chain-ai
