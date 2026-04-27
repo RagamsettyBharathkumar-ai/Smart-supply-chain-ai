@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Supply Chain AI</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <h2>Smart Supply Chain AI</h2>
+ <button onclick="logout()">Logout</button>
+  <!-- NEW: menu below title -->
+  <div class="nav-links">
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('resolved')">Resolved</button>
+  </div>
+</nav>
+
+<!-- ================= LOGIN PAGE ================= -->
+<div id="login-page">
+
+  <div class="login-container">
+    <h2>🔐 Login</h2>
+
+    <input type="text" id="username" placeholder="Enter Username" />
+    <input type="password" id="password" placeholder="Enter Password" />
+
+    <button onclick="login()">Login</button>
+
+    <p id="login-error"></p>
+  </div>
+
+</div>
+
+<!-- ================= HOME PAGE ================= -->
+<div id="home-page">
+
+  <!-- HEADER STATUS -->
+  <header>
+    <div id="status">🟢 System Normal</div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+      <div class="card">
+        <h3>Total Shipments</h3>
+        <p id="total">1200</p>
+      </div>
+
+      <div class="card">
+        <h3>Delayed</h3>
+        <p id="delayed">12</p>
+      </div>
+
+      <div class="card">
+        <h3>At Risk</h3>
+        <p id="risk">30</p>
+      </div>
+    </div>
+
+    <!-- MAP -->
+    <div class="map">
+      <h2>📍 Live Shipment Map</h2>
+      <div id="map"></div>
+    </div>
+
+    <!-- RIGHT PANEL (ALERTS) -->
+    <div class="right-panel">
+      <!-- Alerts will load dynamically -->
+    </div>
+
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-section">
+    <h2>Shipment Details</h2>
+
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Status</th>
+        <th>ETA</th>
+      </tr>
+
+      <tr>
+        <td>#101</td>
+        <td class="status-green">On Time</td>
+        <td>2 hrs</td>
+      </tr>
+
+      <tr>
+        <td>#102</td>
+        <td class="status-red">Delayed</td>
+        <td>5 hrs</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+
+<!-- ================= RESOLVED PAGE ================= -->
+<div id="resolved-page" style="display:none;">
+
+  <div class="resolved-header">
+  <h2>Resolved Alerts</h2>
+  <button onclick="clearResolved()">🗑 Clear History</button>
+ </div>
+
+  <table>
+    <tr>
+      <th>Type</th>
+      <th>Message</th>
+      <th>Created</th>
+      <th>Resolved Time</th>
+    </tr>
+
+    <tbody id="resolvedTable"></tbody>
+  </table>
+
+</div>
+
+
+<!-- ================= SCRIPTS ================= -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
