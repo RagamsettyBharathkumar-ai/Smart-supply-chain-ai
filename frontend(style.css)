@@ -1,0 +1,242 @@
+/* ================= GLOBAL ================= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0f1c;
+  color: white;
+}
+
+/* ================= NAVBAR ================= */
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  flex-direction: column;   /* 🔥 stack items vertically */
+  align-items: center;      /* center everything */
+  background: #0b1a2f;
+  padding: 15px 30px;
+}
+
+.navbar h2 {
+  margin: 0;
+  margin-bottom: 10px;      /* space below title */
+}
+
+/* NEW */
+.nav-links {
+  display: flex;
+  gap: 15px;               /* spacing between buttons */
+}
+
+.nav-links button {
+  padding: 8px 15px;
+  border: none;
+  background: #1f3b6d;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-links button:hover {
+  background: #2f5cb3;
+}
+
+/* ================= STATUS ================= */
+header {
+  padding: 10px 20px;
+}
+
+#status {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ================= MAIN LAYOUT ================= */
+.container {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+}
+
+/* ================= LEFT PANEL ================= */
+.left-panel {
+  width: 20%;
+}
+
+.card {
+  background: #1c1f2b;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ================= MAP ================= */
+.map {
+  width: 55%;
+  background: #111827;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ================= ALERT PANEL ================= */
+.right-panel {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================= ALERT BOX ================= */
+.alert-box {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.alert-box small {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* ALERT COLORS */
+.red-bg {
+  background: #dc2626;
+}
+
+.yellow-bg {
+  background: #facc15;
+  color: black;
+}
+
+/* ALERT BUTTON */
+.alert-box button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* BUTTON COLORS */
+.red-bg button {
+  background: white;
+  color: #dc2626;
+}
+
+.yellow-bg button {
+  background: black;
+  color: white;
+}
+
+/* ================= TABLE ================= */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #1c1f2b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: #111827;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #2a2f3f;
+}
+
+/* ================= STATUS COLORS ================= */
+.status-green {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.status-red {
+  color: #ef4444;
+  font-weight: bold;
+}
+.resolved-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.resolved-header button {
+  padding: 8px 15px;
+  background: #dc2626;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resolved-header button:hover {
+  background: #ef4444;
+}
+
+/* ================= LOGIN PAGE ================= */
+#login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a0f1c;
+}
+
+.login-container {
+  background: #1c1f2b;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background: #1f3b6d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: #2f5cb3;
+}
+
+#login-error {
+  color: #ef4444;
+  margin-top: 10px;
+}
