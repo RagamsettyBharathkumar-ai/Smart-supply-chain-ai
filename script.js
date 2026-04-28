@@ -62,7 +62,7 @@ setInterval(() => {
    BACKEND CONFIG
 ========================= */
 
-const API_URL = "";
+const API_URL = "https://smart-supply-chain-ai.onrender.com";
 
 
 /* =========================
